@@ -1,0 +1,20 @@
+// Spriting has never been easier with Compass. You place the sprite images in a folder, 
+// import them into your stylesheet, and then you can use the sprite in your selectors 
+// in one of several convenient ways.
+
+// <map> is defined by folder name.
+
+// $<map>-spacing: The amount of transparent space, in pixels, around each sprite. Defaults to 0px
+$sprites-spacing: 20px
+
+// $<map>-sprite-dimensions: Whether or not the dimensions of the sprite should be included in 
+// each sprite's CSS output. Can be true or false. Defaults to false
+$sprites-sprite-dimensions: true
+
+// Folder containing sprites. As of right now only works with pngs.
+@import "sprites/*.png"
+
+// all-<map>-sprites: creates the css for the sprites. 
+// Class names will be set by <map>-<image-name>
+@include all-sprites-sprites
+

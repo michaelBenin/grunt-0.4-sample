@@ -1,0 +1,16 @@
+// font-face($name, $font-files, $eot, $weight, $style)
+//   Cross-browser support for @font-face. Supports IE, Gecko, Webkit, Opera.
+//   - $name is required, arbitrary, and what you will use in font stacks.
+//   - $font-files is required using font-files('relative/location', 'format'). 
+//     for best results use this order: woff, opentype/truetype, svg
+//   - $eot is required by IE, and is a relative location of the eot file.
+//   - $weight shows if the font is bold, defaults to normal
+//   - $style defaults to normal, might be also italic
+//   - For android 2.2 Compatiblity, please ensure that your web page has a meta viewport tag.
+//   - To support iOS < 4.2, an SVG file must be provided
+
+// font-files([$font]*)
+// The font-files function takes a list of arguments containing the path to each font files relative to your project's font directory.
+// This helper is used with the font-face mixin and is what makes it possible to pass any number of font files.
+
++font-face("gillsans", font-files("gillsans.eot", "gillsans.svg", "gillsans.ttf", "gillsans.woff"))

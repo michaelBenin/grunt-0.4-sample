@@ -1,0 +1,22 @@
+// A function is very similar to a mixin, however the output from a function is a single value. 
+// This can be any Sass data type, including: numbers, strings, colors, booleans, or lists.
+
+// Calculation for converting
+// Target = Original pixels width
+// Context = Container pixel width
+@function convertCalculation( $target, $context )
+  @return $target / $context
+
+// Converts pixels to percentages for a flex grid layout
+// Target = Original pixels width
+// Context = Container pixel width (optional), Falls back on base page width
+@function convertPercent( $target, $context: $base-page-width )
+  $percent: convertCalculation( $target, $context ) * 100 + "%"
+  @return unquote( $percent )
+
+// Converts pixels to ems for a flex grid layout
+// Target = Original pixels width
+// Context = Container font size (optional), Falls back on base page width
+@function convertEms( $target, $context: $base-font-size )
+  $ems: convertCalculation( $target, $context ) + "em"
+  @return unquote( $ems )

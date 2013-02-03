@@ -1,7 +1,7 @@
 {
   "name": "grunt-0.4-sample",
-  "description": "Learning grunt 0.4",
-  "version": "0.1",
+  "description": "Learning grunt 0.4.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/gruntjs/grunt/wiki/Getting-started",
   "author": {
     "name": "Michael Benin",
@@ -27,7 +27,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "grunt": "~0.4.0",
+    "grunt": "0.4.0rc6",
     "grunt-contrib-livereload": "0.1.0rc7",
     "grunt-contrib-compass": "~0.1.0",
     "grunt-contrib-htmlmin": "~0.1.0",
@@ -50,7 +50,7 @@
   },
   "keywords": [
     "grunt.js",
-    "grunt 0.4",
+    "grunt 0.4.0",
     "gruntplugin"
   ]
 }

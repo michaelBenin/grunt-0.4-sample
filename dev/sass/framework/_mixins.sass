@@ -1,0 +1,26 @@
+@mixin keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @-o-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+@mixin animation($value)
+  -webkit-animation: $value
+  -moz-animation: $value
+  -ms-animation: $value
+  -o-animation: $value
+  animation: $value
+
+@mixin textmask($imageurl)
+  background: url($imageurl)
+  -webkit-background-clip: text
+  color: transparent
+
+//@mixin imagemask($imageurl)
+  -webkit-mask-image:url($imageurl)

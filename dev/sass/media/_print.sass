@@ -1,0 +1,21 @@
+@media print
+  header
+    height: convertEms(50)
+    h1
+      font-size: convertEms(32)
+    nav
+      display: none
+  section
+    article
+      border-bottom: 1px solid #333
+      float: none
+      margin: 0 0 convertEms(20)
+      width: 100%
+    aside
+      color: #333
+      width: 100%
+      +box-shadow(none)
+      ul
+        padding: 0
+  footer
+    display: none
